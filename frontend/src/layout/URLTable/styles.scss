@@ -1,0 +1,15 @@
+.refresh-button {
+  cursor: pointer;
+  &:hover {
+    color: var(--primary);
+    filter: drop-shadow(1px 1px 1px var(--primary-dark));
+  }
+}
+
+a,
+a:hover,
+a:focus,
+a:active {
+  text-decoration: none !important;
+  color: var(--background) !important;
+}

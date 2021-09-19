@@ -1,0 +1,12 @@
+@import "./variables";
+
+$theme-colors: (
+  "primary": $primary,
+  "primary-dark": $primary-dark,
+  "secondary": $secondary,
+  "tertiary": $tertiary,
+  "background": $background,
+);
+$table-bg-scale: 45%;
+
+@import "~bootstrap/scss/bootstrap";
