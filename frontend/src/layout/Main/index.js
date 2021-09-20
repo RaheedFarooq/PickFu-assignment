@@ -53,8 +53,10 @@ function Main() {
             readOnly
             value={url}
             onClick={() => {
-              navigator.clipboard.writeText(url);
-              setCopy(true);
+              if (navigator?.clipboard) {
+                navigator.clipboard.writeText(url);
+                setCopy(true);
+              }
             }}
           />
         ) : (

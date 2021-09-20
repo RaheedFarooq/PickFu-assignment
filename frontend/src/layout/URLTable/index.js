@@ -30,7 +30,14 @@ function URLTable() {
           heading="Popular Links"
           reloadHandler={setDataRequested}
         />
-        <CustomTable data={tableData || []} />
+        {tableData?.length ? (
+          <CustomTable data={tableData} />
+        ) : (
+          <div className="text-primary">
+            No Data to show, please click the refresh icon after creating your
+            url.
+          </div>
+        )}
       </Col>
     </Row>
   );
